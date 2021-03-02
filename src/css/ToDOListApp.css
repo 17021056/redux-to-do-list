@@ -1,0 +1,13 @@
+.container {
+    margin: 36px auto;
+    width: 100%;
+    max-width: 1000px;
+}
+.sort_selected::after {
+    content: '\F00C';
+    font-family: FontAwesome;
+    font-weight: normal;
+    font-style: normal;
+    margin: 0px 0px 0px 10px;
+    display: inline-block;
+}
