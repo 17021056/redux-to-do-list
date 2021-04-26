@@ -32,7 +32,7 @@ class TableTask extends Component {
             console.log(filter)
                 if(filter.name){
                     tasks = tasks.filter((element,id)=>{
-                        return element.name.toLowerCase().includes(filter.name) === true
+                        return element.name.toLowerCase().includes(filter.name.toLowerCase()) === true
                     })
                     console.log(filter.name)
                     console.log(tasks)
@@ -50,7 +50,7 @@ class TableTask extends Component {
         console.log(keywords.keywords)
         if(keywords.keywords!==""){
             tasks = tasks.filter((element,id)=>{
-                return element.name.toLowerCase().includes(keywords.keywords) === true
+                return element.name.toLowerCase().includes(keywords.keywords.toLowerCase()) === true
             })
         }   
         if(sort.sortBy==='name'){
