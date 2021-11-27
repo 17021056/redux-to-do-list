@@ -8,12 +8,11 @@ var myReducer = (state = initialState ,action) =>{
     switch(action.type){
         
         case types.FILTER_TABLE :
-            var state = {
+            var stateNew = {
                 name: action.filter.name,
                 by: action.filter.by,
             }
-            console.log(state)
-            return state
+            return stateNew
         default: return state
     }
 }
