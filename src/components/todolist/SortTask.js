@@ -19,33 +19,30 @@ class SortTask extends Component {
                         Sắp xếp
                     </button>
                     <div className="dropdown-menu">
-                        <a 
+                        <button 
                         onClick={() =>this._onClickDropdown('name',1)} 
                         className={( sortTask.sortBy==='name' && sortTask.sortValue===1) ? "dropdown-item sort_selected" : "dropdown-item"  }
-                        href="#"
                         >
                             <i className="fa fa-sort-alpha-asc" aria-hidden="true"></i>
                             <span> Tên A-Z</span>
-                        </a>
-                        <a 
+                        </button>
+                        <button 
                         onClick={() =>this._onClickDropdown('name',-1)} 
                         className={( sortTask.sortBy==='name' && sortTask.sortValue===-1) ? "dropdown-item sort_selected" : "dropdown-item"  }
-                        href="#"
+                        href="/"
                         >
                             <i className="fa fa-sort-alpha-desc" aria-hidden="true"></i>
                             <span> Tên Z-A</span>
-                        </a>
+                        </button>
                         <div className="dropdown-divider"></div>
-                        <a  
+                        <button  
                         onClick={() =>this._onClickDropdown('status',1)} 
                         className={( sortTask.sortBy==='status' && sortTask.sortValue===1) ? "dropdown-item sort_selected" : "dropdown-item"  }
-                        href="#"
-                        >complete</a>
-                        <a  
+                        >complete</button>
+                        <button  
                         onClick={() =>this._onClickDropdown('status',-1)} 
                         className={( sortTask.sortBy==='status' && sortTask.sortValue===-1) ? "dropdown-item sort_selected" : "dropdown-item"  }
-                        href="#"
-                        >incomplete</a>
+                        >incomplete</button>
                     </div>
                 </div>
             </div>
